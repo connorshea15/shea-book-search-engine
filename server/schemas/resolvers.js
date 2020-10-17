@@ -41,23 +41,23 @@ const resolvers = {
             const token = signToken(user);
     
             return { token, user};
-        },
+        }/*,
 
 
 
         saveBook: {
 
-
+            console.log('hello');
 
         },
 
 
         removeBook: {
 
+            console.log('hello');
 
 
-
-        }
+        } */
 
 
     }
@@ -65,6 +65,6 @@ const resolvers = {
 
 
 
-}
+};
 
 module.exports = resolvers;
