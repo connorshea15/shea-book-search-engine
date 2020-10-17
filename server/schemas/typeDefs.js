@@ -11,6 +11,7 @@ const typeDefs = gql`
     }
 
     type Book {
+        _id: ID
         bookId: String
         authors: [String]
         description: String
@@ -26,6 +27,7 @@ const typeDefs = gql`
 
     type Query {
         me: User
+        users: [User]
     }
 
     type Mutation {

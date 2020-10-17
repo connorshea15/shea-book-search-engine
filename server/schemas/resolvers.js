@@ -15,7 +15,13 @@ const resolvers = {
             }
 
             throw new AuthenticationError('You are not logged in!');
-        }
+        },
+
+        users: async () => {
+            return User.find()
+              .select('-__v -password')
+              .populate('savedBooks');
+          }
     },
 
     Mutation: {
@@ -52,7 +58,7 @@ const resolvers = {
                     { $addToSet: { savedBooks: args } },
                     { new: true }
                 )
-
+                console.log(updatedUser);
                 return updatedUser;
             }
 
