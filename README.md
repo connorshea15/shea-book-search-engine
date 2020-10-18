@@ -20,7 +20,7 @@ The Shea Book Search Engine is a place where you can search for titles of books 
 ![](/client/public/mockup.JPG)
 
 ### Heroku Live Application
-Live Deployed Application: [View Application](https://(replaceMe).herokuapp.com/ "Live Deploy")  
+Live Deployed Application: https://shea-book-search-engine.herokuapp.com/ 
 
 ## Contributors    
 Connor Shea   
